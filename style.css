@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f4ff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 40px;
+  margin: 0;
+}
+
+.game-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  font-size: 2em;
+  border-radius: 10px;
+  border: none;
+  background: #e0e7ff;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cell:hover {
+  background: #c7d2fe;
+}
+
+.info p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+button {
+  padding: 8px 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+.history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.history li {
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-size: 0.95em;
+}
